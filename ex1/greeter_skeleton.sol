@@ -8,14 +8,14 @@ contract greeter {
 
 	function greeter(string _greeting) public {
 		/* Write one line of code for the contract to set our greeting */
- 		greetings.push(_greeting);
-		count = 0;
+ 	        greetings.push(_greeting);
+   	        count = 0;
 	}
 
-  function sendAnotherGreet(string _greet) {
-      greetings.push(_greet);
-      count += 1;
-  }
+	function sendAnotherGreet(string _greet) {
+	        greetings.push(_greet);
+	        count += 1;
+        }
 
 	function greet() constant returns (string)  {
 		/* Write one line of code to allow the contract to return our greeting */
@@ -23,6 +23,6 @@ contract greeter {
 	}
 
 	function greetCount() constant returns (uint) {
-	    return count + 1;
+	        return count + 1;
 	}
 }
